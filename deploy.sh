@@ -101,7 +101,7 @@ else
 	clone_directory="../clone/${INCLUDE_ONLY}/"
 fi
 
-rsync -a ${clone_directory}* ./wp-content/${PROJECT_TYPE}s/${REPO_NAME}
+rsync -a ${clone_directory}* ./wp-content/${PROJECT_TYPE}s/${REPO_NAME} --delete
 
 # Stage, commit, and push to wpengine repo
 
